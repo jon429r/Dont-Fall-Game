@@ -25,13 +25,16 @@ The server and client were developed by me and include adequate error handling s
 ## Getting Started
 
 1. Clone the GitHub repository.
-2. Install the prerequisites by running the `install_prerequisites.py` script.
+2. If python is installed on the device, install the prerequisites by running the `install_prerequisites.py` script.
+2. If python3 is not installed, install the prerequisites by typing
+`chmod +x install_prerequisites.sh` then `.\install_prerequisites.sh`
 3. Run the server using the command `python3 server.py`.
 4. Run the client using the command `python3 client.py`.
 
 ### Prerequisites
 
-- Pygame
+- Pygame coded in 2.5.2
+- Python 3.6 or newer
 
 ## How to Play
 
@@ -44,7 +47,7 @@ Include screenshots or images showcasing the gameplay, graphics, and the overall
 
 ## Technical Details
 
-This program is written in Python using the Socket library.
+This program is written in Python using the Socket library. Graphics draw by me and displayed using Pygame
 
 ### Built With
 
