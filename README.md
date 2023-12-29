@@ -43,7 +43,14 @@ To bring up the global chat, press '/' and type your message. Then press Enter t
 
 ## Gameplay Screenshots
 
-Include screenshots or images showcasing the gameplay, graphics, and the overall visual experience of your game.
+<img width="1274" alt="Screenshot 2023-12-28 at 8 48 38 PM" src="https://github.com/jon429r/Dont-Fall-Game/assets/103213920/f8da9c4a-96a0-4013-9bfe-31dae137af48">
+
+
+<img width="1274" alt="Screenshot 2023-12-28 at 8 48 08 PM" src="https://github.com/jon429r/Dont-Fall-Game/assets/103213920/c6e446d2-8340-4e0e-bc59-a6ee9ac54db2">
+
+
+<img width="1273" alt="Screenshot 2023-12-28 at 8 47 30 PM" src="https://github.com/jon429r/Dont-Fall-Game/assets/103213920/75d58b33-d3bd-4bee-ad5c-752df1b10f27">
+
 
 ## Technical Details
 
