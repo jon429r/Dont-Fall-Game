@@ -1,7 +1,6 @@
 ##DONE
 ##Map.py
 
-from User import UserList, get_Fallen
 from Tile import FallenTiles, fall, clear_fallen_tiles
 
 width = 10
@@ -21,6 +20,7 @@ def map_command(create_new_map)->str:
         str: Returns a success code '200' if the map was sent successfully
     """
     global height, width
+    from User import UserList
 
     DEFAULT_MAP = [["0" for x in range(width)] for y in range(height)]
 
@@ -42,7 +42,7 @@ def map_command(create_new_map)->str:
     return '200'
 
 def send_map(DEFAULT_MAP):
-
+    from User import UserList
     ## Send the map to all connected clients
     for recipient in UserList:
         try:

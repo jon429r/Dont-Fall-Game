@@ -6,7 +6,7 @@ import os
 # Setup pygame
 pygame.init()
 screen = pygame.display.set_mode((1280, 720))
-fps = 15
+fps = 60
 clock = pygame.time.Clock()
 in_game_loop = False
 
@@ -330,7 +330,6 @@ def main():
                     screen.blit(down_button_surface, down_button.topleft)
                     screen.blit(left_button_surface, left_button.topleft)
                     screen.blit(right_button_surface, right_button.topleft)
-                    screen.blit(quit_button_surface, quit_button.topleft)
                 except:
                     print('failed to draw buttons')
 

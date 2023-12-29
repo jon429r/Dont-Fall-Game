@@ -30,6 +30,11 @@ The server and client were developed by me and include adequate error handling s
 `chmod +x install_prerequisites.sh` then `.\install_prerequisites.sh`
 3. Run the server using the command `python3 server.py`.
 4. Run the client using the command `python3 client.py`.
+5. After both have started, you be asked to login or Exit
+
+To Login the command is `Hello <username>`
+
+To Exit the command is `Quit`
 
 ### Prerequisites
 
