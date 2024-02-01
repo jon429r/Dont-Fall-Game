@@ -180,7 +180,6 @@ def create_random_map(rows, cols):
     for row in range(rows):
         map_row = [random.choice(elements) for _ in range(cols)]
         game_map.append(map_row)
-    print(game_map)
     return game_map
 
 
@@ -218,7 +217,6 @@ running = True
 
 def main():
     global running, chat_text, chatting, chat_input, fallen
-    print('in main')
 
     try:
         # Send a message to start the game
@@ -294,7 +292,7 @@ def main():
 
         # Receive updates from the server
         data_from_server = client_socket.recv(4096).decode('utf-8')
-        print(f'Received data: {data_from_server}')
+        #print(f'Received data: {data_from_server}')
 
         if data_from_server.startswith('200 Player:'):
             try:
@@ -320,7 +318,7 @@ def main():
                 print("Error parsing map data. Exiting.")
                 running = False
             else:
-                print('Displaying game')
+                #print('Displaying game')
                 # Display the map
                 screen.fill((0, 0, 0))  # Fill with black color
                 screen.blit(loaded_sprites['Background_image'], (0, 0))  # Use the loaded image directly
