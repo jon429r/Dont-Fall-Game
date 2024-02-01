@@ -19,17 +19,16 @@ def start_game_timer():
 
 def map_update_timer():
     """Called when the game starts to start the map update timer
-        Runs the map command every second
+        Runs the map command 10 timers per second
     """
     from User import UserList
-    interval_seconds = 1
+    interval_seconds = .1
     try:
         while True:
             if len(UserList) is not 0:
                 from Map import map_command
                 map_command(False)
             else:
-                print('No Users in UserList')
                 pass
             time.sleep(interval_seconds)
     except socket.error as e:

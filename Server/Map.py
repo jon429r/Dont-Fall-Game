@@ -2,6 +2,7 @@
 ##Map.py
 
 from Tile import FallenTiles, fall, clear_fallen_tiles
+import random 
 
 width = 10
 height = 10
@@ -19,7 +20,7 @@ def map_command(create_new_map)->str:
     Returns:
         str: Returns a success code '200' if the map was sent successfully
     """
-    global height, width
+    global height, width, oncePerSec
     from User import UserList
 
     DEFAULT_MAP = [["0" for x in range(width)] for y in range(height)]
@@ -29,7 +30,11 @@ def map_command(create_new_map)->str:
         if user.Xcorr >= 0 and user.Ycorr >= 0 and not user.Fallen:
             DEFAULT_MAP[user.Xcorr][user.Ycorr] = 'P'
 
-    fall(DEFAULT_MAP)
+
+    if random.randint(1, 10) == 1:
+        fall(DEFAULT_MAP)
+    
+    
 
     if create_new_map:
         clear_fallen_tiles()
@@ -72,5 +77,4 @@ def create_map_message(game_map):
         map_message += row_string
     map_message += "\n"
 
-    print(map_message)
     return map_message.encode('utf-8')
